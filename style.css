@@ -1,0 +1,118 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing: content-box;
+}
+
+body{
+    background-color: rgba(189, 185, 185, 0.562);
+}
+
+main {
+    max-width: 70%;
+    margin: 25px auto; 
+    border: 2px solid rgb(0,0,0);
+    background-color: rgb(255, 255, 255);
+}
+
+/*Header*/
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 2px solid rgb(0,0,0);
+    background-color: rgb(42, 65, 190);
+}
+
+/*imagen*/
+.name {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 300px;
+    margin-left: 20px;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+}
+
+.subtitulo {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+/*Posicion inferior*/
+section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 200px;
+    grid-template-areas: 
+    "cont per"
+    "hist per"
+    "exp exp";
+}
+
+.contact{
+    grid-area: cont;
+    border-right: 2px solid rgb(0,0,0);
+    border-bottom: 2px solid rgb(0,0,0);
+}
+
+.estudio{
+    grid-area: hist;
+    border-right: 2px solid rgb(0,0,0);
+    border-bottom: 2px solid rgb(0,0,0);
+}
+
+.perfil{
+    grid-area: per;
+    border-bottom: 2px solid rgb(0,0,0);
+}
+
+.exp-laboral{
+    grid-area: exp;
+}
+
+ul{
+    list-style-position: inside;
+    margin: 10px;
+}
+
+/*Decoracion inferior*/
+
+.foto-p{
+    height: auto;
+    width: auto;
+    margin: 30px;
+}
+
+/*Decoracion inferior*/
+
+h2{
+    font-size: 40px;
+    margin: 5px;
+}
+
+h3{
+    font-size: 30px;
+    margin: 5px;
+}
+
+p{
+    font-size: 15px;
+    margin: 5px;
+}
+
+li{
+    font-size: 15px;
+    margin: 5px;
+}
